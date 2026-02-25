@@ -9,9 +9,9 @@ Use this skill for Reddit ingestion and monitoring only (no posting/commenting/v
 
 ## Run the Script
 
-Script path:
+Script path (redacted template):
 
-`/root/.openclaw/workspace/skills/reddit-lite/scripts/reddit_lite.py`
+`/path/to/reddit-lite/scripts/reddit_lite.py`
 
 Common commands:
 
@@ -55,4 +55,4 @@ Reddit does not reliably expose exact downvote counts on all content. Use `estim
 
 Read cron patterns and mode notes in:
 
-- `/root/.openclaw/workspace/skills/reddit-lite/references/modes.md`
+- `/path/to/reddit-lite/references/modes.md`

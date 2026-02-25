@@ -31,15 +31,16 @@ Use `summary` to rank opportunity posts from your stored monitor dataset using e
 Examples:
 
 ```bash
-python3 /root/.openclaw/workspace/skills/reddit-lite/scripts/reddit_lite.py summary --window 500 --top 10
-python3 /root/.openclaw/workspace/skills/reddit-lite/scripts/reddit_lite.py summary --query "prediction markets" --window 1000 --top 15
+python3 scripts/reddit_lite.py summary --window 500 --top 10
+python3 scripts/reddit_lite.py summary --query "prediction markets" --window 1000 --top 15
+# or: python3 /path/to/reddit-lite/scripts/reddit_lite.py ...
 ```
 
 ## Cron examples
 
 ```bash
-*/10 * * * * python3 /root/.openclaw/workspace/skills/reddit-lite/scripts/reddit_lite.py monitor --subreddit LocalLLaMA --sort new --limit 50 >> /tmp/reddit-monitor.log 2>&1
-*/10 * * * * python3 /root/.openclaw/workspace/skills/reddit-lite/scripts/reddit_lite.py monitor --query "prop trading" --sort new --limit 50 >> /tmp/reddit-monitor.log 2>&1
+*/10 * * * * python3 /path/to/reddit-lite/scripts/reddit_lite.py monitor --subreddit LocalLLaMA --sort new --limit 50 >> /path/to/logs/reddit-monitor.log 2>&1
+*/10 * * * * python3 /path/to/reddit-lite/scripts/reddit_lite.py monitor --query "prop trading" --sort new --limit 50 >> /path/to/logs/reddit-monitor.log 2>&1
 ```
 
 Keep polling >= 5-10 minutes to reduce load and avoid unnecessary retries.
